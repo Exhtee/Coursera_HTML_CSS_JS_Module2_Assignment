@@ -1,0 +1,129 @@
+* {
+/*	font-family: Tahoma, sans-serif;*/
+	font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+h1 {
+	text-align: center;
+}
+
+h2 {
+	width: 40%;
+/*	height: 30px;*/
+	margin: 0px;
+/*	float: right;*/
+	clear: left;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+
+.chicken h2{
+	text-align: center;
+	background-color: d59898;
+	border: 1px solid black;
+	padding: 5px;
+	box-sizing: border-box;
+}
+
+.beef h2{
+	color: ffffff;
+	text-align: center;
+	background-color: c14543;
+	border: 1px solid black;
+	padding: 5px;
+}
+
+.sushi h2{
+	text-align: center;
+	background-color: e5d198;
+	border: 1px solid black;
+	padding: 5px;
+}
+
+/*.chicken, .beef, .sushi {
+	float: left;
+	padding: 10px;
+	width: 33%;
+	box-sizing: border-box;
+	position: relative;
+	top: -10px;
+
+}*/
+
+.chicken {
+/*	width: 33%;*/
+/*	margin: 0px 5px 5px 0px;*/
+}
+
+.beef {
+/*	width: 33%;*/
+/*	margin: 0px 0px 5px 5px;*/
+}
+
+.sushi {
+/*	width: 33%;*/
+	/*clear: left; */
+}
+
+body {
+	margin: 0px;
+}
+
+.boundary {
+	padding: 10px;
+	box-sizing: border-box;
+	border: 1px solid black;
+	background-color: 999999;
+	position: relative;
+
+/*	float: right;*/
+}
+
+p {
+	margin-block-start:3em;
+}
+
+/* All 3 sections equal width next to each other */
+	@media (min-width: 992px) { 
+		.chicken, .beef, .sushi {
+			float: left;
+			padding: 10px;
+			width: 33%;
+			box-sizing: border-box;
+			position: relative;
+			top: -10px;
+		}
+	}
+
+/* First two next door 3rd on next row spanning whole viewport wideth*/
+@media (min-width: 768px) and (max-width: 991px) { 
+	.chicken, .beef{
+		float: left;
+		padding: 10px;
+		width: 50%;
+		box-sizing: border-box;
+		position: relative;
+		top: -10px;
+	}
+
+	.sushi {
+		width: 100%;
+		float: left;
+		padding: 10px;
+		box-sizing: border-box;
+		position: relative;
+		top: -10px;
+	}
+
+}
+
+/* All sections on own row spanning entire viewport width */
+@media (max-width: 767px) { 
+	.chicken, .beef, .sushi{
+		padding: 10px;
+		box-sizing: border-box;
+		position: relative;
+		top: -10px;
+	}
+}
